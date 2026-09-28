@@ -1,0 +1,24 @@
+/*
+Theme Id: rose
+Theme Name: 玫瑰红
+Author: 系统内置
+Version: 1.0
+Description: 热情鲜明的玫瑰红，醒目而有活力。
+Dark: no
+*/
+:root[data-theme="rose"] {
+  --primary: #e11d48;
+  --primary-dark: #be123c;
+  --primary-soft: #ffe9ee;
+}
+:root[data-theme="rose"] input:focus,
+:root[data-theme="rose"] select:focus,
+:root[data-theme="rose"] textarea:focus {
+  box-shadow: 0 0 0 3px rgba(225, 29, 72, .14);
+}
+:root[data-theme="rose"] .data-table tbody tr:hover {
+  background: rgba(225, 29, 72, .04);
+}
+:root[data-theme="rose"] .pm-cat-row td {
+  border-top-color: #fcc6d2;
+}

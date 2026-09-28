@@ -1,0 +1,24 @@
+/*
+Theme Id: amber
+Theme Name: 琥珀橙
+Author: 系统内置
+Version: 1.0
+Description: 温暖明亮的琥珀橙，积极而醒目。
+Dark: no
+*/
+:root[data-theme="amber"] {
+  --primary: #d97706;
+  --primary-dark: #b45309;
+  --primary-soft: #fff3e0;
+}
+:root[data-theme="amber"] input:focus,
+:root[data-theme="amber"] select:focus,
+:root[data-theme="amber"] textarea:focus {
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, .15);
+}
+:root[data-theme="amber"] .data-table tbody tr:hover {
+  background: rgba(217, 119, 6, .045);
+}
+:root[data-theme="amber"] .pm-cat-row td {
+  border-top-color: #f4d2a1;
+}

@@ -1,0 +1,128 @@
+/*
+Theme Id: dark
+Theme Name: 暗夜黑
+Author: 系统内置
+Version: 1.0
+Description: 深色暗色模式，夜间浏览护眼，沉浸专注。
+Dark: yes
+*/
+
+/* ---- 核心变量覆盖 ---- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --card: #111c2e;
+  --topbar-bg: #111c2e;
+  --text: #dbe4f0;
+  --muted: #8b9bb4;
+  --border: #243248;
+  --primary: #4f8cff;
+  --primary-dark: #8ab4ff;
+  --surface-1: #16233a;
+  --surface-2: #1d2c47;
+  --primary-soft: #173158;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .3);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, .3), 0 1px 4px rgba(0, 0, 0, .35);
+}
+
+/* ---- 基础控件 ---- */
+:root[data-theme="dark"] ::placeholder { color: #5d6b82; }
+:root[data-theme="dark"] input:focus,
+:root[data-theme="dark"] select:focus,
+:root[data-theme="dark"] textarea:focus {
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, .22);
+}
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea {
+  background: #0f1a2c;
+}
+:root[data-theme="dark"] input:disabled,
+:root[data-theme="dark"] select:disabled {
+  background: var(--surface-2);
+}
+
+/* ---- 按钮 ---- */
+:root[data-theme="dark"] .btn-mini { background: var(--card); }
+:root[data-theme="dark"] .btn-mini.danger {
+  border-color: #7f3a44;
+  background: var(--card);
+}
+:root[data-theme="dark"] .btn-mini.danger:hover { background: #34171f; }
+
+/* ---- 顶部 / 导航 ---- */
+:root[data-theme="dark"] .nav-link { color: var(--text); }
+
+/* ---- 后台侧栏滚动条 ---- */
+:root[data-theme="dark"] .admin-side::-webkit-scrollbar-thumb { background: #2d3f5c; }
+:root[data-theme="dark"] .admin-side::-webkit-scrollbar-thumb:hover { background: #43567a; }
+
+/* ---- 后台：权限分类勾选组 ---- */
+:root[data-theme="dark"] .perm-cat-group {
+  border-left-color: #35507a;
+  background: #12213a;
+}
+
+/* ---- 表格 ---- */
+:root[data-theme="dark"] .data-table tbody tr:hover {
+  background: rgba(79, 140, 255, .07);
+}
+
+/* ---- 用户组权限/范围徽标 ---- */
+:root[data-theme="dark"] .pill-self {
+  background: #2e2412;
+  color: #f0c674;
+  border-color: #6b5320;
+}
+
+/* ---- 富文本 ---- */
+:root[data-theme="dark"] .rich code {
+  background: #1e2c44;
+  color: var(--text);
+}
+
+/* ---- 危险分区 ---- */
+:root[data-theme="dark"] .set-cat-danger {
+  border-color: #6b3338;
+  background: #241519;
+}
+
+/* ---- 前台：关于我们关闭横幅 ---- */
+:root[data-theme="dark"] .about-offline-banner {
+  background: #2e2412;
+  border-color: #6b5320;
+  color: #f0c674;
+}
+
+/* ---- 前台：我的导航卡片操作钮 ---- */
+:root[data-theme="dark"] .mynav-op-btn {
+  background: rgba(17, 28, 46, .95);
+}
+:root[data-theme="dark"] .mynav-op-del:hover { background: #34171f; }
+
+/* ---- 权限管理：规则卡 ---- */
+:root[data-theme="dark"] .perm-rules-card {
+  background: #13233f;
+  border-color: #27456e;
+}
+/* 二级授权分类标题 / 条目 */
+:root[data-theme="dark"] .delegate-cat-head {
+  border-bottom-color: #35507a;
+}
+:root[data-theme="dark"] .delegate-item.is-granted {
+  border-color: #2c6a4a;
+  background: #122c20;
+}
+:root[data-theme="dark"] .delegate-item.from-group {
+  border-color: #2b4d75;
+  background: #13263f;
+}
+
+/* ---- 权限矩阵 ---- */
+:root[data-theme="dark"] .pm-cat-row td {
+  border-top-color: #35507a;
+}
+
+/* ---- 搜索记录：范围徽标 ---- */
+:root[data-theme="dark"] .src-group { background: #16365c; color: #9cc4ff; }
+:root[data-theme="dark"] .src-user  { background: #103a2a; color: #7fd6a8; }

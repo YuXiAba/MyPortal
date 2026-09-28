@@ -1,0 +1,24 @@
+/*
+Theme Id: cyan
+Theme Name: 青碧
+Author: 系统内置
+Version: 1.0
+Description: 清澈通透的青碧色，科技与沉静并存。
+Dark: no
+*/
+:root[data-theme="cyan"] {
+  --primary: #0891b2;
+  --primary-dark: #0e7490;
+  --primary-soft: #e2f7fb;
+}
+:root[data-theme="cyan"] input:focus,
+:root[data-theme="cyan"] select:focus,
+:root[data-theme="cyan"] textarea:focus {
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, .15);
+}
+:root[data-theme="cyan"] .data-table tbody tr:hover {
+  background: rgba(8, 145, 178, .045);
+}
+:root[data-theme="cyan"] .pm-cat-row td {
+  border-top-color: #a5e1ed;
+}

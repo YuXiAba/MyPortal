@@ -1,0 +1,24 @@
+/*
+Theme Id: emerald
+Theme Name: 翡翠绿
+Author: 系统内置
+Version: 1.0
+Description: 自然清新的翡翠绿，护眼而有生机。
+Dark: no
+*/
+:root[data-theme="emerald"] {
+  --primary: #059669;
+  --primary-dark: #047857;
+  --primary-soft: #e6f7f1;
+}
+:root[data-theme="emerald"] input:focus,
+:root[data-theme="emerald"] select:focus,
+:root[data-theme="emerald"] textarea:focus {
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, .15);
+}
+:root[data-theme="emerald"] .data-table tbody tr:hover {
+  background: rgba(5, 150, 105, .045);
+}
+:root[data-theme="emerald"] .pm-cat-row td {
+  border-top-color: #a7e3cd;
+}

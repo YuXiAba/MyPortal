@@ -1,0 +1,27 @@
+/*
+Theme Id: violet
+Theme Name: 梦幻紫
+Author: 系统内置
+Version: 1.0
+Description: 优雅神秘的紫罗兰，创意与设计感之选。
+Dark: no
+*/
+:root[data-theme="violet"] {
+  --primary: #7c3aed;
+  --primary-dark: #6d28d9;
+  --primary-soft: #f1ebff;
+}
+/* 输入控件聚焦光晕跟随主色 */
+:root[data-theme="violet"] input:focus,
+:root[data-theme="violet"] select:focus,
+:root[data-theme="violet"] textarea:focus {
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, .15);
+}
+/* 表格行悬浮微调为紫色系 */
+:root[data-theme="violet"] .data-table tbody tr:hover {
+  background: rgba(124, 58, 237, .045);
+}
+/* 矩阵分类行上边框跟随 */
+:root[data-theme="violet"] .pm-cat-row td {
+  border-top-color: #d6c4fb;
+}
